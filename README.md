@@ -1,6 +1,7 @@
 # ACF Flexible Content Title
 
-- [Changing the Field Used](#what-field-does-the-title-come-from)
+- [Usage](#usage)
+- [Changing the Field Used](#changing-the-field-used)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 
