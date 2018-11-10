@@ -1,16 +1,22 @@
 # ACF Flexible Content Title
 
+- [Changing the Field Used](#what-field-does-the-title-come-from)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+
 Display the content of a text sub field in the title bar of your Advanced Custom Fields flexible content sections to make editing your page sections easier to navigate.
-
-![Expanded Flexible Content Layout with Title Field](/screenshots/flexible_content_expanded.png)
-
-![Expanded Flexible Content Layout with Title Field](/screenshots/flexible_content_overview.png)
 
 I recommend pairing this with a plugin that will help you collapse all of your flexible content sections, such as [ACF Repeater & Flexible Content Collapser](https://wordpress.org/plugins/acf-repeater-flexible-content-collapser/).
 
-# What field does the title come from?
+## Usage
 
-By default, this plugin looks for a sub field named `section_title` in the flexible content field. You can filter that as follows if you wish to use a different sub field:
+This plugin looks for a sub field named `section_title` in the flexible content field. Add a field with that name to your layouts, or use the filter to change which sub field is used.
+
+![Section Title Field](/screenshots/section_title_field.png)
+
+## Changing the Field Used
+
+You can filter that as follows if you wish to use a different sub field:
 
 ```php
 // change the sub field used in flexible content field title
@@ -34,3 +40,13 @@ There are three options for installing this plugin:
 1. With composer from [Packagist](https://packagist.org/packages/mmirus/acf-flexible-content-title): `composer require mmirus/acf-flexible-content-title`
 2. With [GitHub Updater](https://github.com/afragen/github-updater)
 3. By downloading the latest release ZIP from this repository and installing it like any normal WordPress plugin
+
+## Screenshots
+
+_Expanded flexible content layout_
+
+![Expanded Flexible Content Layout with Title Field](/screenshots/flexible_content_expanded.png)
+
+_Overview of flexible content layouts_
+
+![Expanded Flexible Content Layout with Title Field](/screenshots/flexible_content_overview.png)
