@@ -10,14 +10,16 @@ I recommend pairing this with a plugin that will help you collapse all of your f
 
 # What field does the title come from?
 
-By default, this plugin looks for a sub field in the flexible content field with the name `section_title`. You can filter that like so if you wish to use a different sub field:
+By default, this plugin looks for a sub field named `section_title` in the flexible content field. You can filter that as follows if you wish to use a different sub field:
 
 ```php
-// filter sub field used in flexible content field title
+// change the sub field used in flexible content field title
 add_filter('acf_flexible_content_title_field', function($title_field, $flexible_field, $layout) {
   return 'my_text_sub_field';
 }, 10, 3);
 ```
+
+**Arguments**
 
 - `$title_field` (string) the name of the title field to be displayed
 - `$flexible_field` (array) the flexible content field settings
